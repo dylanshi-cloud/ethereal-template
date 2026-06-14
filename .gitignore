@@ -11,9 +11,5 @@ Thumbs.db
 .vscode/
 *.sublime-*
 
-# Don't include personal QR codes (replace with your own)
-images/wechat-qr.*
-images/alipay-qr.*
-
 # Logs
 *.log

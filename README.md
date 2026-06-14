@@ -100,13 +100,17 @@ Two editions available:
 
 **🇨🇳 国内用户 (WeChat / Alipay):**
 
-扫下方二维码付款 **¥199**，然后发邮件到 [dylan_shi@hotmail.com](mailto:dylan_shi@hotmail.com) 告知你的 GitHub 用户名和付款截图，我会把你加入 Pro 版私有仓库。
+扫下方二维码付款 **¥199**，付款后发邮件到 [dylan_shi@hotmail.com](mailto:dylan_shi@hotmail.com) 告知你的 GitHub 用户名，我会把你加入 Pro 版私有仓库。
 
-*(付款二维码待补充 — 你先在微信/支付宝生成收款码，放到 `images/wechat-qr.jpg` 和 `images/alipay-qr.jpg`)*
+<div align="center">
+  <img src="images/wechat-qr.jpg" alt="Payment QR" width="280" />
+  <br/>
+  <em>WeChat / Alipay 扫码支付 ¥199</em>
+</div>
 
 **🌍 International (PayPal):**
 
-PayPal $29 to dylan_shi@hotmail.com — include your GitHub username in the note.
+PayPal $29 to `dylan_shi@hotmail.com` — include your GitHub username in the note.
 
 ---
 
