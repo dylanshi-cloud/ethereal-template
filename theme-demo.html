@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ethereal Template — Multi-theme demo" />
+  <title>Ethereal — Theme Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+
+  <!-- Theme selector bar -->
+  <style>
+    .theme-bar{position:fixed;top:0;left:0;right:0;z-index:9999;display:flex;gap:0;background:#fff;border-bottom:1px solid rgba(0,0,0,0.06);padding:0;font-size:0.75rem;overflow-x:auto}
+    .theme-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:0.4rem;padding:0.6rem 0.5rem;text-decoration:none;color:#999;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-weight:400}
+    .theme-bar a:hover{color:#333;background:#f8f8f8}
+    .theme-bar a.active{color:#2D3436;border-bottom-color:#C8925A}
+    .theme-dot{display:inline-block;width:10px;height:10px;border-radius:50%;flex-shrink:0}
+    .nav{margin-top:2.2rem !important}
+    @media(max-width:640px){.theme-bar{font-size:0.65rem}}
+  </style>
+</head>
+<body class="" id="themeBody">
+
+  <!-- Theme selector -->
+  <nav class="theme-bar" id="themeBar">
+    <a href="#" data-theme="" class="active">
+      <span class="theme-dot" style="background:#C8925A"></span> Ethereal
+    </a>
+    <a href="#" data-theme="theme-noir">
+      <span class="theme-dot" style="background:#C9A96E"></span> Noir
+    </a>
+    <a href="#" data-theme="theme-bloom">
+      <span class="theme-dot" style="background:#D47A8A"></span> Bloom
+    </a>
+    <a href="#" data-theme="theme-zen">
+      <span class="theme-dot" style="background:#8B9A6E"></span> Zen
+    </a>
+    <a href="#" data-theme="theme-ocean">
+      <span class="theme-dot" style="background:#4A8DB5"></span> Ocean
+    </a>
+    <a href="#" data-theme="theme-ember">
+      <span class="theme-dot" style="background:#C87A4A"></span> Ember
+    </a>
+  </nav>
+
+  <!-- ==================== NAV ==================== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo">ethere<span class="nav__logo--ee">al</span></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#products">Collection</a></li>
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <canvas class="hero__particles" id="heroParticles"></canvas>
+    <div class="hero__content container">
+      <div class="hero__icon">
+        <svg viewBox="0 0 80 100" width="80" height="100">
+          <polygon points="40,5 75,85 40,70 5,85" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+          <polygon points="40,15 65,78 40,65 15,78" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
+          <line x1="40" y1="5" x2="40" y2="15" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+          <line x1="40" y1="70" x2="40" y2="85" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+        </svg>
+      </div>
+      <h1 class="hero__title">
+        <span class="hero__title--small">Ethereal</span>
+        <span class="hero__title--large" id="demoHeroLarge">Timeless beauty,<br/>thoughtfully made.</span>
+        <span class="hero__title--sub" id="demoHeroSub">Crafted for those who appreciate the finer details.</span>
+      </h1>
+      <a href="#products" class="btn btn--outline hero__cta">Explore the collection</a>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==================== STORY ==================== -->
+  <section class="story" id="story">
+    <div class="container">
+      <div class="story__grid">
+        <div class="story__visual">
+          <div class="story__shape">
+            <div class="story__shape-inner">
+              <span class="story__icon">✦</span>
+            </div>
+          </div>
+        </div>
+        <div class="story__text">
+          <h2 class="section-title">Our Story</h2>
+          <p class="story__p">
+            Every great creation begins with a single moment of inspiration.
+            A whisper of an idea that grows into something meaningful.
+          </p>
+          <p class="story__p">
+            We believe in <em>slow creation</em>. In taking the time to
+            source the finest materials, to work with skilled hands, and
+            to craft objects that carry meaning beyond their surface.
+          </p>
+          <p class="story__p">
+            Inspired by nature's patience — the crystal formed over millennia,
+            the bee building with quiet purpose — our collection is a
+            reminder to slow down and appreciate what is real.
+          </p>
+          <div class="story__signature">
+            <span class="story__sig-text">— Ethereal</span>
+            <span class="story__sig-sub">Slow down. Feel more.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRODUCTS ==================== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="products__header">
+        <h2 class="section-title section-title--light">Our Collection</h2>
+        <p class="products__intro">Each piece thoughtfully selected, beautifully presented.</p>
+      </div>
+      <div class="products__grid">
+        <article class="product-card product-card--featured">
+          <div class="product-card__visual">
+            <div class="product-card__placeholder product-card__placeholder--1">
+              <span class="product-card__placeholder-icon">✦</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__tag product-card__tag--featured">Featured</span>
+            <h3 class="product-card__title">Product Name</h3>
+            <p class="product-card__desc">Beautifully crafted with premium materials and attention to every detail.</p>
+            <div class="product-card__footer"><span class="product-card__price">$99</span><button class="btn btn--small btn--ghost buy-btn">Buy Now</button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-card__visual">
+            <div class="product-card__placeholder product-card__placeholder--2">
+              <span class="product-card__placeholder-icon">✦</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__tag">New</span>
+            <h3 class="product-card__title">Product Name</h3>
+            <p class="product-card__desc">Thoughtfully designed to bring beauty into your daily rituals.</p>
+            <div class="product-card__footer"><span class="product-card__price">$149</span><button class="btn btn--small btn--ghost buy-btn">Buy Now</button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-card__visual">
+            <div class="product-card__placeholder product-card__placeholder--3">
+              <span class="product-card__placeholder-icon">✦</span>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__tag">Premium</span>
+            <h3 class="product-card__title">Product Name</h3>
+            <p class="product-card__desc">The finest materials, carefully assembled by skilled artisans.</p>
+            <div class="product-card__footer"><span class="product-card__price">$249</span><button class="btn btn--small btn--ghost buy-btn">Buy Now</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PHILOSOPHY ==================== -->
+  <section class="philosophy" id="philosophy">
+    <div class="container">
+      <div class="philosophy__grid">
+        <div class="philosophy__item">
+          <div class="philosophy__icon"><svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="1"/><path d="M24 12v12l8 8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h3 class="philosophy__title">Quality</h3>
+          <p class="philosophy__text">Craftsmanship that stands the test of time. Made to be cherished.</p>
+        </div>
+        <div class="philosophy__item">
+          <div class="philosophy__icon"><svg viewBox="0 0 48 48" width="48" height="48"><path d="M24 8C16 8 12 14 12 20c0 8 12 20 12 20s12-12 12-20c0-6-4-12-12-12z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="20" r="4" fill="none" stroke="currentColor" stroke-width="1"/></svg></div>
+          <h3 class="philosophy__title">Intention</h3>
+          <p class="philosophy__text">Every object serves a purpose — to bring meaning to everyday life.</p>
+        </div>
+        <div class="philosophy__item">
+          <div class="philosophy__icon"><svg viewBox="0 0 48 48" width="48" height="48"><path d="M12 36c0-6 4-10 12-18S36 18 36 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M28 36h8v-8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3 class="philosophy__title">Connection</h3>
+          <p class="philosophy__text">Small rituals, meaningful moments — a breath before you begin.</p>
+        </div>
+      </div>
+      <div class="philosophy__quote">
+        <blockquote>"Every object carries the memory of time.<br/>Every maker builds with purpose.<br/><strong>Every moment deserves to be felt.</strong>"</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__card">
+        <div class="contact__content">
+          <h2 class="section-title">Stay in Touch</h2>
+          <p class="contact__text">Be the first to know about new collections and stories from our workshops.</p>
+          <form class="contact__form" id="waitlistForm">
+            <input type="email" id="emailInput" class="contact__input" placeholder="Your email address" required aria-label="Email address" />
+            <button type="submit" class="btn btn--primary contact__btn">Notify me</button>
+          </form>
+          <p class="contact__privacy">No spam. Unsubscribe anytime.</p>
+          <div class="contact__success" id="successMsg">Thank you! We'll be in touch.</div>
+        </div>
+        <div class="contact__visual">
+          <div class="contact__circle"></div>
+          <span class="contact__icon">✦</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">ethere<span class="nav__logo--ee">al</span></a>
+        <p class="footer__tagline">Timeless beauty,<br/>thoughtfully made.</p>
+      </div>
+      <div class="footer__links">
+        <h4 class="footer__heading">Explore</h4>
+        <ul><li><a href="#story">Our Story</a></li><li><a href="#products">Collection</a></li><li><a href="#philosophy">Philosophy</a></li></ul>
+      </div>
+      <div class="footer__social">
+        <h4 class="footer__heading">Connect</h4>
+        <ul><li><a href="#" target="_blank">Instagram</a></li><li><a href="#" target="_blank">TikTok</a></li></ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; 2026 Ethereal. All rights reserved.</p>
+      <p class="footer__credit">Made with intention.</p>
+    </div>
+  </footer>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <script src="js/main.js"></script>
+
+  <!-- Theme switching logic -->
+  <script>
+    (function() {
+      var body = document.getElementById('themeBody');
+      var links = document.querySelectorAll('#themeBar a');
+      var heroLarge = document.getElementById('demoHeroLarge');
+      var heroSub = document.getElementById('demoHeroSub');
+
+      var themes = {
+        '':          { name: 'Ethereal', large: 'Timeless beauty,<br/>thoughtfully made.', sub: 'Crafted for those who appreciate the finer details.' },
+        'theme-noir':  { name: 'Noir', large: 'Bold elegance,<br/>unapologetically refined.', sub: 'For those who demand the extraordinary.' },
+        'theme-bloom': { name: 'Bloom', large: 'Gentle beauty,<br/>naturally radiant.', sub: 'Celebrate the soft, the delicate, the real.' },
+        'theme-zen':   { name: 'Zen', large: 'Find your center,<br/>one breath at a time.', sub: 'Rooted in nature. Guided by intention.' },
+        'theme-ocean': { name: 'Ocean', large: 'Deep calm,<br/>endless discovery.', sub: 'Let the tide carry you to something new.' },
+        'theme-ember': { name: 'Ember', large: 'Warmth that lingers,<br/>light that inspires.', sub: 'Handcrafted moments for your home.' },
+      };
+
+      function switchTheme(themeClass) {
+        // Remove all theme classes
+        body.className = '';
+        if (themeClass) body.classList.add(themeClass);
+
+        // Update hero text
+        var t = themes[themeClass] || themes[''];
+        heroLarge.innerHTML = t.large;
+        heroSub.textContent = t.sub;
+
+        // Update active state
+        links.forEach(function(l) { l.classList.remove('active'); });
+        document.querySelector('#themeBar a[data-theme="' + themeClass + '"]').classList.add('active');
+
+        // Store preference
+        localStorage.setItem('ethereal-theme', themeClass);
+      }
+
+      // Click handlers
+      links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          switchTheme(this.dataset.theme);
+
+          // Update URL hash without scrolling
+          var hash = this.dataset.theme ? '#theme-' + this.dataset.theme.replace('theme-', '') : '#';
+          history.pushState(null, '', hash);
+        });
+      });
+
+      // On load: check URL hash or localStorage
+      (function() {
+        var hash = window.location.hash.replace('#', '');
+        var stored = localStorage.getItem('ethereal-theme');
+        var theme = '';
+
+        if (hash === 'theme-noir') theme = 'theme-noir';
+        else if (hash === 'theme-bloom') theme = 'theme-bloom';
+        else if (hash === 'theme-zen') theme = 'theme-zen';
+        else if (hash === 'theme-ocean') theme = 'theme-ocean';
+        else if (hash === 'theme-ember') theme = 'theme-ember';
+        else if (stored) theme = stored;
+
+        switchTheme(theme);
+      })();
+    })();
+  </script>
+</body>
+</html>

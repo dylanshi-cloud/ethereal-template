@@ -1,0 +1,255 @@
+/* ============================================================
+   ETHEREAL — Theme Pack
+   5 premium color schemes for the Ethereal brand template.
+
+   Usage: Add the theme class to <html> or <body>
+   <html class="theme-noir">  →  Black & gold luxury
+   <html class="theme-bloom"> →  Soft pink beauty
+   <html class="theme-zen">   →  Earthy wellness
+   <html class="theme-ocean"> →  Deep blue jewelry
+
+   Default (no class) = Ethereal warm gold
+   ============================================================ */
+
+/* ============================================================
+   THEME: Noir — Black & Gold Luxury
+   For: Luxury fashion, premium accessories, high-end jewelry
+   ============================================================ */
+.theme-noir {
+  --color-bg: #1A1A1A;
+  --color-bg-alt: #222222;
+  --color-bg-dark: #0D0D0D;
+  --color-text: #E8E8E8;
+  --color-text-light: #999999;
+  --color-text-muted: #666666;
+  --color-accent: #C9A96E;
+  --color-accent-light: #E8D5A8;
+  --color-accent-dark: #A8884D;
+  --color-border: rgba(232, 232, 232, 0.08);
+  --color-card-bg: #222222;
+}
+
+.theme-noir .hero__bg {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(201, 169, 110, 0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(201, 169, 110, 0.06) 0%, transparent 60%),
+    linear-gradient(135deg, #0D0D0D 0%, #1A1A1A 40%, #0D0D0D 100%);
+}
+
+.theme-noir .nav--scrolled {
+  background: rgba(26, 26, 26, 0.92);
+  backdrop-filter: blur(12px);
+}
+
+.theme-noir .product-card--featured {
+  border-color: rgba(201, 169, 110, 0.2);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* Noir product placeholder gradients */
+.theme-noir .product-card__placeholder--1 {
+  background: linear-gradient(145deg, #1C1C1C 0%, #3D3D3D 40%, #5C5C5C 100%);
+}
+.theme-noir .product-card__placeholder--2 {
+  background: linear-gradient(145deg, #1A1410 0%, #3D3024 40%, #6B5540 100%);
+}
+.theme-noir .product-card__placeholder--3 {
+  background: linear-gradient(145deg, #1C1814 0%, #3D3228 40%, #6B5540 100%);
+}
+
+/* ============================================================
+   THEME: Bloom — Soft Pink Beauty
+   For: Skincare, cosmetics, feminine brands, florists
+   ============================================================ */
+.theme-bloom {
+  --color-bg: #FDF8F6;
+  --color-bg-alt: #F8EFEC;
+  --color-bg-dark: #2D2424;
+  --color-text: #3D2C2C;
+  --color-text-light: #8A7272;
+  --color-text-muted: #B8A0A0;
+  --color-accent: #D47A8A;
+  --color-accent-light: #F0D0D8;
+  --color-accent-dark: #B85E6E;
+  --color-border: rgba(61, 44, 44, 0.08);
+  --color-card-bg: #FFFFFF;
+}
+
+.theme-bloom .hero__bg {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(212, 122, 138, 0.15) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(212, 122, 138, 0.08) 0%, transparent 60%),
+    linear-gradient(135deg, #2D2424 0%, #3D2C2C 40%, #2D2424 100%);
+}
+
+.theme-bloom .nav--scrolled {
+  background: rgba(253, 248, 246, 0.92);
+}
+
+.theme-bloom .product-card--featured {
+  border-color: rgba(212, 122, 138, 0.2);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.theme-bloom .product-card__tag--featured {
+  background: rgba(212, 122, 138, 0.2);
+  color: var(--color-accent);
+}
+
+/* Bloom product placeholder gradients */
+.theme-bloom .product-card__placeholder--1 {
+  background: linear-gradient(145deg, #3D2440 0%, #6B4070 40%, #9A5CA0 100%);
+}
+.theme-bloom .product-card__placeholder--2 {
+  background: linear-gradient(145deg, #403030 0%, #705050 40%, #A07070 100%);
+}
+.theme-bloom .product-card__placeholder--3 {
+  background: linear-gradient(145deg, #402835 0%, #704860 40%, #A06880 100%);
+}
+
+/* ============================================================
+   THEME: Zen — Earthy Wellness
+   For: Tea brands, meditation, yoga, wellness, organic
+   ============================================================ */
+.theme-zen {
+  --color-bg: #F5F0EA;
+  --color-bg-alt: #EBE3DA;
+  --color-bg-dark: #1E201C;
+  --color-text: #2C2E28;
+  --color-text-light: #7A7A6E;
+  --color-text-muted: #9E9E92;
+  --color-accent: #8B9A6E;
+  --color-accent-light: #D0DDB8;
+  --color-accent-dark: #6E7D54;
+  --color-border: rgba(44, 46, 40, 0.08);
+  --color-card-bg: #FFFFFF;
+}
+
+.theme-zen .hero__bg {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(139, 154, 110, 0.15) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(139, 154, 110, 0.08) 0%, transparent 60%),
+    linear-gradient(135deg, #1E201C 0%, #2C2E28 40%, #1E201C 100%);
+}
+
+.theme-zen .nav--scrolled {
+  background: rgba(245, 240, 234, 0.92);
+}
+
+.theme-zen .product-card--featured {
+  border-color: rgba(139, 154, 110, 0.2);
+}
+
+.theme-zen .product-card__tag--featured {
+  background: rgba(139, 154, 110, 0.2);
+  color: var(--color-accent);
+}
+
+/* Zen product placeholder gradients */
+.theme-zen .product-card__placeholder--1 {
+  background: linear-gradient(145deg, #1E3D2C 0%, #3D6B54 40%, #5C9A7C 100%);
+}
+.theme-zen .product-card__placeholder--2 {
+  background: linear-gradient(145deg, #3D3528 0%, #6B5C48 40%, #9A8468 100%);
+}
+.theme-zen .product-card__placeholder--3 {
+  background: linear-gradient(145deg, #283D30 0%, #486B58 40%, #689A80 100%);
+}
+
+/* ============================================================
+   THEME: Ocean — Deep Blue Jewelry
+   For: Jewelry, travel, spa, aquatic brands
+   ============================================================ */
+.theme-ocean {
+  --color-bg: #F0F4F8;
+  --color-bg-alt: #E2EAF2;
+  --color-bg-dark: #0F1A2E;
+  --color-text: #1A2A40;
+  --color-text-light: #5A6A80;
+  --color-text-muted: #8A9AB0;
+  --color-accent: #4A8DB5;
+  --color-accent-light: #B8D8E8;
+  --color-accent-dark: #2E6D95;
+  --color-border: rgba(26, 42, 64, 0.08);
+  --color-card-bg: #FFFFFF;
+}
+
+.theme-ocean .hero__bg {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(74, 141, 181, 0.15) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(74, 141, 181, 0.08) 0%, transparent 60%),
+    linear-gradient(135deg, #0F1A2E 0%, #1A2A40 40%, #0F1A2E 100%);
+}
+
+.theme-ocean .nav--scrolled {
+  background: rgba(240, 244, 248, 0.92);
+}
+
+.theme-ocean .product-card--featured {
+  border-color: rgba(74, 141, 181, 0.2);
+}
+
+.theme-ocean .product-card__tag--featured {
+  background: rgba(74, 141, 181, 0.2);
+  color: var(--color-accent);
+}
+
+/* Ocean product placeholder gradients */
+.theme-ocean .product-card__placeholder--1 {
+  background: linear-gradient(145deg, #0E2A3D 0%, #1D4E6B 40%, #2C729A 100%);
+}
+.theme-ocean .product-card__placeholder--2 {
+  background: linear-gradient(145deg, #0A1C3D 0%, #15386B 40%, #20549A 100%);
+}
+.theme-ocean .product-card__placeholder--3 {
+  background: linear-gradient(145deg, #0D2630 0%, #1A4858 40%, #266A80 100%);
+}
+
+/* ============================================================
+   THEME: Ember — Warm Sunset
+   For: Home decor, candles, interior design
+   ============================================================ */
+.theme-ember {
+  --color-bg: #FDF5F0;
+  --color-bg-alt: #F5E8DE;
+  --color-bg-dark: #2A1E18;
+  --color-text: #3D2B20;
+  --color-text-light: #8A7060;
+  --color-text-muted: #B8A090;
+  --color-accent: #C87A4A;
+  --color-accent-light: #E8C8B0;
+  --color-accent-dark: #A85E2E;
+  --color-border: rgba(61, 43, 32, 0.08);
+  --color-card-bg: #FFFFFF;
+}
+
+.theme-ember .hero__bg {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(200, 122, 74, 0.15) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(200, 122, 74, 0.08) 0%, transparent 60%),
+    linear-gradient(135deg, #2A1E18 0%, #3D2B20 40%, #2A1E18 100%);
+}
+
+.theme-ember .nav--scrolled {
+  background: rgba(253, 245, 240, 0.92);
+}
+
+.theme-ember .product-card--featured {
+  border-color: rgba(200, 122, 74, 0.2);
+}
+
+.theme-ember .product-card__tag--featured {
+  background: rgba(200, 122, 74, 0.2);
+  color: var(--color-accent);
+}
+
+/* Ember product placeholder gradients */
+.theme-ember .product-card__placeholder--1 {
+  background: linear-gradient(145deg, #3D2818 0%, #6B4830 40%, #9A6848 100%);
+}
+.theme-ember .product-card__placeholder--2 {
+  background: linear-gradient(145deg, #3D2010 0%, #6B4020 40%, #9A6030 100%);
+}
+.theme-ember .product-card__placeholder--3 {
+  background: linear-gradient(145deg, #3D3028 0%, #6B5840 40%, #9A8060 100%);
+}

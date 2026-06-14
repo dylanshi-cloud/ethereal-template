@@ -25,9 +25,11 @@ GitHub Repository: Brand showcase template with ethereal animations
 
 ## ✦ Preview
 
-> 🎨 **See it in action** → [Live Demo](https://dylanshi-cloud.github.io/ethereal-template/)
+> 🎨 **Live Demo** → [dylanshi-cloud.github.io/ethereal-template](https://dylanshi-cloud.github.io/ethereal-template/)
 >
-> *(Screenshots coming soon — the demo speaks for itself)*
+> 🎭 **Theme Gallery** → [5 Color Schemes](https://dylanshi-cloud.github.io/ethereal-template/themes-preview.html)
+>
+> 🎨 **Interactive Theme Switcher** → [Try All Themes](https://dylanshi-cloud.github.io/ethereal-template/theme-demo.html)
 
 ---
 
@@ -53,6 +55,7 @@ Built with **pure HTML + CSS + JavaScript** — no build tools, no frameworks, n
 | 📦 **Buy Now Modal** | Built-in order form (email-based) |
 | 📱 **Fully Responsive** | Mobile, tablet, desktop |
 | 🎨 **CSS Variables** | One-file color/font theming |
+| 🎭 **5 Color Themes** | Noir, Bloom, Zen, Ocean, Ember — instant brand swap |
 | 🚀 **Zero Dependencies** | No React, no jQuery, no Node |
 | 📄 **Documentation** | Full setup & customization guide included |
 
@@ -85,14 +88,15 @@ Full documentation included in the download.
 
 ## ✦ Pricing
 
-Two editions available:
+Three editions available:
 
 | Edition | Price | What's Included |
 |---------|-------|-----------------|
-| **Lite** (public) | **Free** | Basic HTML structure (no animations, placeholder content) |
-| **Pro** 💎 | **¥199 / $29** | ✓ Full template with all animations ✓ Complete CSS ✓ Complete JS ✓ Product checkout modal ✓ Documentation ✓ Priority support |
+| **Lite** (public) | **Free** | Basic HTML structure (placeholder content, no animations) |
+| **Pro** 💎 | **¥199 / $29** | ✓ Full template with all 7 animations ✓ Checkout modal ✓ Documentation ✓ Priority support |
+| **Pro + Theme Pack** 🌟 | **¥299 / $39** | Everything in Pro **+** 5 premium color themes (Noir · Bloom · Zen · Ocean · Ember) with industry-specific content templates |
 
-> **Pro edition buyers get**: the complete source with all 7 animations, order form, cursor glow, SVG stroke animations, and full customization docs.
+> **Pro + Theme Pack buyers get**: the complete template + 5 industry-ready themes with matching hero gradients, product card placeholders, and brand content templates for: luxury fashion (Noir), beauty (Bloom), wellness/tea (Zen), jewelry/travel (Ocean), home decor (Ember).
 
 ---
 
@@ -100,17 +104,24 @@ Two editions available:
 
 **🇨🇳 国内用户 (WeChat / Alipay):**
 
-扫下方二维码付款 **¥199**，付款后发邮件到 [dylan_shi@hotmail.com](mailto:dylan_shi@hotmail.com) 告知你的 GitHub 用户名，我会把你加入 Pro 版私有仓库。
+| 版本 | 价格 | 扫码付款 |
+|------|------|---------|
+| Pro | **¥199** | 扫下方码 → 备注 **"Pro"** |
+| Pro + Theme Pack | **¥299** | 扫下方码 → 备注 **"Pro + Themes"** |
+
+付款后发邮件到 [dylan_shi@hotmail.com](mailto:dylan_shi@hotmail.com) 告知你的 GitHub 用户名和版本，我会把你加入对应的私有仓库。
 
 <div align="center">
   <img src="images/wechat-qr.jpg" alt="Payment QR" width="280" />
   <br/>
-  <em>WeChat / Alipay 扫码支付 ¥199</em>
+  <em>WeChat / Alipay — 扫码付款</em>
 </div>
 
 **🌍 International (PayPal):**
 
-PayPal $29 to `dylan_shi@hotmail.com` — include your GitHub username in the note.
+PayPal to `dylan_shi@hotmail.com`:
+- Pro: **$29** — include GitHub username
+- Pro + Theme Pack: **$39** — include GitHub username + "Themes"
 
 ---
 

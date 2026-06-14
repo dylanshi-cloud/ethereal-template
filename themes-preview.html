@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethereal Template — Theme Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Inter',sans-serif;font-weight:300;background:#F5F5F0;color:#2D3436}
+    .container{max-width:1100px;margin:0 auto;padding:0 2rem}
+    h1{font-family:'Playfair Display',serif;font-size:3rem;font-weight:400;text-align:center;padding:4rem 0 0.5rem}
+    .sub{text-align:center;color:#999;margin-bottom:3rem;font-size:1.1rem}
+    .theme-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;padding-bottom:4rem}
+    .theme-card{background:#fff;border:1px solid rgba(0,0,0,0.04);transition:transform 0.3s,box-shadow 0.3s;overflow:hidden}
+    .theme-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.06)}
+    .theme-preview{height:200px;display:flex;align-items:center;justify-content:center;font-size:2rem}
+    .theme-info{padding:1.5rem}
+    .theme-name{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:0.3rem}
+    .theme-desc{font-size:0.9rem;color:#999;margin-bottom:1rem}
+    .theme-tags{display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1rem}
+    .tag{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.05em;padding:0.2rem 0.6rem;background:#f0f0f0;color:#666}
+    .btn{display:inline-block;padding:0.6rem 1.5rem;border:1px solid #2D3436;color:#2D3436;text-decoration:none;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;transition:all 0.3s}
+    .btn:hover{background:#2D3436;color:#fff}
+    .footer{text-align:center;padding:2rem;color:#999;font-size:0.85rem;border-top:1px solid rgba(0,0,0,0.06)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>✦ Theme Gallery</h1>
+    <p class="sub">One template. Five distinct personalities. Pick your palette.</p>
+
+    <div class="theme-grid">
+      <!-- Ethereal (original) -->
+      <div class="theme-card">
+        <div class="theme-preview" style="background:linear-gradient(135deg,#1E1E1E,#2D3436)">
+          <span style="color:#C8925A">✦</span>
+        </div>
+        <div class="theme-info">
+          <div class="theme-name">Ethereal</div>
+          <div class="theme-desc">Warm gold on cream — the original. Calm, premium, timeless.</div>
+          <div class="theme-tags"><span class="tag">Crystals</span><span class="tag">Jewelry</span><span class="tag">Wellness</span></div>
+          <a href="https://dylanshi-cloud.github.io/ethereal-template/" class="btn">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Noir -->
+      <div class="theme-card">
+        <div class="theme-preview" style="background:linear-gradient(135deg,#0D0D0D,#1A1A1A)">
+          <span style="color:#C9A96E">✦</span>
+        </div>
+        <div class="theme-info">
+          <div class="theme-name">Noir</div>
+          <div class="theme-desc">Dark luxury — black with gold accents. Bold, sophisticated, premium.</div>
+          <div class="theme-tags"><span class="tag">Fashion</span><span class="tag">Luxury</span><span class="tag">Accessories</span></div>
+          <a href="theme-demo.html#theme-noir" class="btn">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Bloom -->
+      <div class="theme-card">
+        <div class="theme-preview" style="background:linear-gradient(135deg,#2D2424,#3D2C2C)">
+          <span style="color:#D47A8A">✦</span>
+        </div>
+        <div class="theme-info">
+          <div class="theme-name">Bloom</div>
+          <div class="theme-desc">Soft pink on warm neutral. Gentle, feminine, inviting.</div>
+          <div class="theme-tags"><span class="tag">Skincare</span><span class="tag">Cosmetics</span><span class="tag">Floral</span></div>
+          <a href="theme-demo.html#theme-bloom" class="btn">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Zen -->
+      <div class="theme-card">
+        <div class="theme-preview" style="background:linear-gradient(135deg,#1E201C,#2C2E28)">
+          <span style="color:#8B9A6E">✦</span>
+        </div>
+        <div class="theme-info">
+          <div class="theme-name">Zen</div>
+          <div class="theme-desc">Olive green on earth. Grounded, natural, balanced.</div>
+          <div class="theme-tags"><span class="tag">Tea</span><span class="tag">Wellness</span><span class="tag">Yoga</span></div>
+          <a href="theme-demo.html#theme-zen" class="btn">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Ocean -->
+      <div class="theme-card">
+        <div class="theme-preview" style="background:linear-gradient(135deg,#0F1A2E,#1A2A40)">
+          <span style="color:#4A8DB5">✦</span>
+        </div>
+        <div class="theme-info">
+          <div class="theme-name">Ocean</div>
+          <div class="theme-desc">Deep blue with silver-blue accents. Calm, trustworthy, refined.</div>
+          <div class="theme-tags"><span class="tag">Jewelry</span><span class="tag">Travel</span><span class="tag">Spa</span></div>
+          <a href="theme-demo.html#theme-ocean" class="btn">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Ember -->
+      <div class="theme-card">
+        <div class="theme-preview" style="background:linear-gradient(135deg,#2A1E18,#3D2B20)">
+          <span style="color:#C87A4A">✦</span>
+        </div>
+        <div class="theme-info">
+          <div class="theme-name">Ember</div>
+          <div class="theme-desc">Terracotta on warm beige. Cozy, artisanal, earthy.</div>
+          <div class="theme-tags"><span class="tag">Home</span><span class="tag">Candles</span><span class="tag">Decor</span></div>
+          <a href="theme-demo.html#theme-ember" class="btn">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;padding-bottom:4rem">
+      <p style="color:#999;margin-bottom:1rem">All themes included in the Pro edition.</p>
+      <a href="https://github.com/dylanshi-cloud/ethereal-template#-pricing" class="btn">Get the Pro Edition →</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Ethereal Template — Made with intention.</p>
+  </div>
+</body>
+</html>
