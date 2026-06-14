@@ -19,6 +19,26 @@ GitHub Repository: Brand showcase template with ethereal animations
     <a href="#-features"><strong>✨ Features</strong></a>
   </p>
   <br/>
+
+  <p align="center">
+    <a href="https://github.com/dylanshi-cloud/ethereal-template/stargazers">
+      <img src="https://img.shields.io/github/stars/dylanshi-cloud/ethereal-template?style=flat-square&label=Stars&color=C8925A" alt="Stars" />
+    </a>
+    <a href="https://github.com/dylanshi-cloud/ethereal-template/blob/main/LICENSE">
+      <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square&color=7A7A7A" alt="License" />
+    </a>
+    <a href="https://dylanshi-cloud.github.io/ethereal-template/">
+      <img src="https://img.shields.io/badge/Live%20Demo-View-2D3436?style=flat-square" alt="Demo" />
+    </a>
+    <img src="https://img.shields.io/badge/Zero%20Dependencies-✓-8B9A6E?style=flat-square" alt="Zero deps" />
+    <img src="https://img.shields.io/badge/Responsive-✓-4A8DB5?style=flat-square" alt="Responsive" />
+  </p>
+
+  <p align="center">
+    <strong>⭐ If you find this useful, consider giving it a star — it helps others discover it too!</strong>
+  </p>
+
+  <br/>
 </div>
 
 ---

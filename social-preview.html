@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ethereal — Social Preview Card</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1280px;height:640px;overflow:hidden;font-family:'Inter','Helvetica Neue',sans-serif;background:#1E1E1E;display:flex;align-items:center;justify-content:center;position:relative}
+
+/* Background glow */
+body::before{content:'';position:absolute;width:800px;height:800px;background:radial-gradient(circle,rgba(200,146,90,0.08) 0%,transparent 70%);top:-200px;right:-200px;pointer-events:none}
+body::after{content:'';position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(200,146,90,0.05) 0%,transparent 70%);bottom:-150px;left:-150px;pointer-events:none}
+
+/* Dots texture */
+.dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.06) 1px,transparent 1px);background-size:24px 24px;pointer-events:none}
+
+/* Particles simulation */
+.p{position:absolute;width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,0.3);pointer-events:none}
+.p1{top:15%;left:20%;width:4px;height:4px;box-shadow:0 0 8px rgba(200,146,90,0.3);background:rgba(255,255,255,0.4)}
+.p2{top:45%;left:75%;width:2px;height:2px;background:rgba(255,255,255,0.2)}
+.p3{top:70%;left:30%;width:5px;height:5px;box-shadow:0 0 12px rgba(200,146,90,0.4);background:rgba(255,255,255,0.35)}
+.p4{top:25%;left:65%;width:2px;height:2px;background:rgba(255,255,255,0.15)}
+.p5{top:60%;left:85%;width:3px;height:3px;box-shadow:0 0 6px rgba(200,146,90,0.2);background:rgba(255,255,255,0.25)}
+.p6{top:80%;left:15%;width:2px;height:2px;background:rgba(255,255,255,0.2)}
+.p7{top:35%;left:45%;width:4px;height:4px;box-shadow:0 0 10px rgba(200,146,90,0.35);background:rgba(255,255,255,0.3)}
+.p8{top:55%;left:55%;width:2px;height:2px;background:rgba(255,255,255,0.15)}
+
+.card{position:relative;z-index:1;text-align:center;padding:3rem}
+.icon{font-size:3rem;color:#C8925A;margin-bottom:1rem;opacity:0.8}
+h1{font-family:'Georgia','Playfair Display',serif;font-size:4.5rem;font-weight:400;color:#fff;letter-spacing:-0.02em;margin-bottom:0.5rem}
+h1 em{font-style:italic;opacity:0.7}
+.tagline{font-size:1.4rem;color:rgba(255,255,255,0.5);font-weight:300;letter-spacing:0.08em;margin-bottom:2.5rem}
+.features{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap}
+.feature{padding:0.5rem 1.2rem;border:1px solid rgba(255,255,255,0.08);font-size:0.85rem;color:rgba(255,255,255,0.4);letter-spacing:0.05em;text-transform:uppercase}
+.brand{position:absolute;bottom:2rem;left:2.5rem;font-size:0.8rem;color:rgba(255,255,255,0.2);letter-spacing:0.1em;text-transform:uppercase}
+.demo{position:absolute;bottom:2rem;right:2.5rem;font-size:0.8rem;color:rgba(255,255,255,0.2);letter-spacing:0.05em}
+</style>
+</head>
+<body>
+<div class="dots"></div>
+<div class="p p1"></div><div class="p p2"></div><div class="p p3"></div><div class="p p4"></div>
+<div class="p p5"></div><div class="p p6"></div><div class="p p7"></div><div class="p p8"></div>
+
+<div class="card">
+  <div class="icon">✦</div>
+  <h1>ether<em>e</em>al</h1>
+  <p class="tagline">Premium Brand Template</p>
+  <div class="features">
+    <span class="feature">Floating Particles</span>
+    <span class="feature">Scroll Reveals</span>
+    <span class="feature">5 Color Themes</span>
+    <span class="feature">Zero Dependencies</span>
+  </div>
+</div>
+
+<div class="brand">✦ Ethereal Template</div>
+<div class="demo">github.com/dylanshi-cloud/ethereal-template</div>
+</body>
+</html>
