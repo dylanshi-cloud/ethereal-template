@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethereal Template — Documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --font-sans: 'Inter', -apple-system, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --accent: #C8925A;
+      --accent-dark: #A67845;
+      --bg: #FAF7F2;
+      --text: #2D3436;
+      --text-light: #7A7A7A;
+      --border: rgba(45, 52, 54, 0.08);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: var(--font-sans);
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--text);
+      background: var(--bg);
+      padding: 3rem 1.5rem;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin: 1.5rem 0 0.5rem;
+    }
+    p { margin-bottom: 1rem; color: var(--text-light); }
+    code, pre {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 0.85rem;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+    code { padding: 0.15rem 0.4rem; }
+    pre {
+      padding: 1.2rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+      line-height: 1.5;
+    }
+    .step {
+      background: #fff;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-left: 3px solid var(--accent);
+    }
+    .step h3 { margin-top: 0; }
+    .tag {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      margin-right: 0.3rem;
+    }
+    ul { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.3rem; color: var(--text-light); }
+    hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+    .footer-doc { margin-top: 3rem; font-size: 0.85rem; color: var(--text-light); text-align: center; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Ethereal Template</h1>
+  <p style="font-size:1.1rem">Premium Brand Template — Documentation</p>
+
+  <hr/>
+
+  <h2>📦 What's Included</h2>
+  <ul>
+    <li><code>index.html</code> — Main template (Hero, Story, Products, Philosophy, Contact, Footer)</li>
+    <li><code>css/style.css</code> — Complete stylesheet with CSS custom properties for easy theming</li>
+    <li><code>js/main.js</code> — All interactions (particles, scroll reveals, cursor glow, checkout form)</li>
+  </ul>
+
+  <h2>🎨 How to Customize</h2>
+
+  <div class="step">
+    <h3>Step 1: Brand Colors & Fonts</h3>
+    <p>Open <code>css/style.css</code> and find the <code>:root</code> block at the top:</p>
+    <pre>  :root {
+    --color-accent: #C8925A;        /* Main brand color */
+    --color-accent-light: #E8D5B7;  /* Light variant */
+    --color-accent-dark: #A67845;   /* Dark variant */
+    --color-bg: #FAF7F2;            /* Page background */
+    --color-bg-dark: #1E1E1E;       /* Dark sections background */
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+  }</pre>
+    <p>Change these to match your brand. Everything else in the template uses these variables — one change affects the whole site.</p>
+  </div>
+
+  <div class="step">
+    <h3>Step 2: Brand Text</h3>
+    <p>Open <code>index.html</code> and search for <code>CUSTOMIZE</code>. Each section has a comment marking what you can change:</p>
+    <ul>
+      <li>Brand name (nav + footer)</li>
+      <li>Hero headline, subtitle, and CTA</li>
+      <li>Story section text</li>
+      <li>Product names, descriptions, and prices</li>
+      <li>Philosophy items</li>
+      <li>Contact form text</li>
+    </ul>
+  </div>
+
+  <div class="step">
+    <h3>Step 3: Replace Product Images</h3>
+    <p>Replace the placeholder gradients with your own product photos:</p>
+    <pre>  &lt;img src="images/your-product.jpg" alt="Product Name" /&gt;</pre>
+    <p>Drop your images in the <code>images/</code> folder and update the <code>src</code> attributes in the product cards.</p>
+  </div>
+
+  <div class="step">
+    <h3>Step 4: Set Up Order Form Email</h3>
+    <p>Open <code>js/main.js</code> and find:</p>
+    <pre>  var yourEmail = 'your@email.com';</pre>
+    <p>Replace with your email address. When customers place orders, the form opens a pre-filled email draft to this address.</p>
+  </div>
+
+  <h2>🚀 Deployment</h2>
+  <p>This is a static HTML template — it works with any hosting:</p>
+
+  <h3>GitHub Pages (Free)</h3>
+  <pre>  git clone your-repo
+  cd your-repo
+  # Add all template files
+  git push
+  # Enable GitHub Pages in repo Settings → Pages → main branch</pre>
+
+  <h3>Netlify (Free)</h3>
+  <pre>  # Drag & drop the entire folder to https://app.netlify.com/drop
+  # Or: connect your Git repository</pre>
+
+  <h3>Any Static Host</h3>
+  <p>Upload the entire folder (index.html + css/ + js/ + images/) to any web host via FTP or control panel.</p>
+
+  <h2>🔧 Structure Overview</h2>
+  <pre>  ethereal-template/
+  ├── index.html           ← Main page (edit your content here)
+  ├── css/
+  │   └── style.css        ← All styles (edit colors/fonts here)
+  ├── js/
+  │   └── main.js          ← Interactions & checkout form
+  └── images/
+      └── (your product photos go here)</pre>
+
+  <h2>✨ Animations Included</h2>
+  <ul>
+    <li><strong>Canvas particles</strong> — 40-55 floating light motes in the hero</li>
+    <li><strong>Text stagger entrance</strong> — Elements fade up one by one on load</li>
+    <li><strong>Scroll reveals</strong> — Sections fade up as you scroll</li>
+    <li><strong>SVG stroke draw</strong> — Philosophy icons animate on scroll</li>
+    <li><strong>Card shimmer</strong> — Light sweep across product cards on hover</li>
+    <li><strong>Breathing circle</strong> — Contact section pulse animation</li>
+    <li><strong>Cursor glow</strong> — Warm light follows mouse (desktop only)</li>
+  </ul>
+
+  <h2>❓ Need Help?</h2>
+  <p>If you get stuck, email the creator at <a href="mailto:dylan_shi@hotmail.com" style="color:var(--accent)">dylan_shi@hotmail.com</a>.</p>
+
+  <div class="footer-doc">
+    <p>Ethereal Template — Made with intention.</p>
+  </div>
+
+</div>
+</body>
+</html>
